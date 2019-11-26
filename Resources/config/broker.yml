@@ -1,0 +1,10 @@
+parameters:
+    dekalee_pub_sub_swarrot.broker.pub_sub.class: Dekalee\PubSubSwarrot\Broker\PubSubFactory
+
+services:
+    dekalee_pub_sub_swarrot.broker.pub_sub:
+        class: '%dekalee_pub_sub_swarrot.broker.pub_sub.class%'
+        arguments:
+            $keyFilePath: '%dekalee_pub_sub_swarrot.factory.key_file_path%'
+        tags:
+            - {name: swarrot.provider_factory, alias: pub_sub }
