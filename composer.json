@@ -1,8 +1,8 @@
 {
     "name": "dekalee/pubsub-swarrot-bundle",
     "description": "The bundle for the pubsub adaptor for swarrot",
-    "type": "bundle",
-    "license": "Apache-2.0",
+    "type": "symfony-bundle",
+    "license": "MIT",
     "authors": [
         {
             "name": "Nicolas Thal",
@@ -11,7 +11,7 @@
     ],
     "require": {
         "swarrot/swarrot-bundle": "~1.4",
-        "dekalee/pubsub-swarrot": "dev-master"
+        "dekalee/pubsub-swarrot": "~1"
     },
     "autoload": {
         "psr-4": { "Dekalee\\PubSubSwarrotBundle\\": "" }
